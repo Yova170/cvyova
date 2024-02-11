@@ -31,24 +31,15 @@ function Navbar() {
       targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
-  
-  const [downloading, setDownloading] = useState(false);
 
   const descarga = () => {
-    setDownloading(true);
-    fetch('../../static/BryanMartinez_Curriculum.pdf')
-      .then(response => response.blob())
-      .then(blob => {
-        const url = window.URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = 'BryanMartinez_CV.pdf';
-        a.click();
-        window.URL.revokeObjectURL(url);
-        setDownloading(false);
-      });
+    const url = '/BryanMartinez_Curriculum.pdf';
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'Bryan_cv.pdf';
+    link.click();
+  };
 
-    }
   return (
     <div className="bg-white shadow-md border-white fixed top-0 left-0 right-0 z-50">
       <div className="container mx-auto flex justify-between items-center p-4 max-w-screen-xl flex-wrap ">
@@ -95,27 +86,27 @@ function Navbar() {
               
             </li>
             <li>
-              <a className="block py-2 px-3 bg-white text-gray-900 rounded md:hover:bg-transparent md:border-0 md:hover:text-emerald-600 md:p-0 md:dark:hover:bg-transparent" href="#me1">
+              <a className="block py-2 px-3 bg-white text-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-emerald-600 md:p-0 md:dark:hover:bg-transparent" href="#me1">
                Tecnologias
               </a>
             </li>
             <li>
-              <a className="block py-2 px-3 bg-white text-gray-900 rounded md:hover:bg-transparent md:border-0 md:hover:text-emerald-600 md:p-0 md:dark:hover:bg-transparent" href="#pr">
+              <a className="block py-2 px-3 bg-white text-gray-900  md:hover:bg-transparent md:border-0 md:hover:text-emerald-600 md:p-0 md:dark:hover:bg-transparent" href="#pr">
                 Proyectos
               </a>
             </li>
             <li>
-              <a className="block py-2 px-3 bg-white text-gray-900 rounded md:hover:bg-transparent md:border-0 md:hover:text-emerald-600 md:p-0 md:dark:hover:bg-transparent" href="#exp">
+              <a className="block py-2 px-3 bg-white text-gray-900  md:hover:bg-transparent md:border-0 md:hover:text-emerald-600 md:p-0 md:dark:hover:bg-transparent" href="#exp">
                Experiencia
               </a>
             </li>
             <li>
-              <button className="block py-2 px-3 bg-white text-gray-900 rounded md:hover:bg-transparent md:border-0 md:hover:text-emerald-600 md:p-0 md:dark:hover:bg-transparent"onClick={descarga} disabled={downloading}>
+              <button className="block py-2 px-3 bg-white text-gray-900  md:hover:bg-transparent md:border-0 md:hover:text-emerald-600 md:p-0 md:dark:hover:bg-transparent"onClick={descarga}>
                CV
               </button>
             </li>
             <li>
-              <a className="block py-2 px-3 bg-white text-gray-900 rounded md:hover:bg-transparent md:border-0 md:hover:text-emerald-600 md:p-0 md:dark:hover:bg-transparent" href="#contacto">
+              <a className="block py-2 px-3 bg-white text-gray-900  md:hover:bg-transparent md:border-0 md:hover:text-emerald-600 md:p-0 md:dark:hover:bg-transparent" href="#contacto">
                Contacto
               </a>
             </li>
@@ -147,7 +138,7 @@ function Navbar() {
               </a>
             </li>
             <li>
-              <button className="block py-2 px-3 bg-white text-gray-900 rounded md:hover:bg-transparent md:border-0 md:hover:text-emerald-600 md:p-0 md:dark:hover:bg-transparent" onClick={descarga} disabled={downloading}>
+              <button className="block py-2 px-3 bg-white text-gray-900 rounded md:hover:bg-transparent md:border-0 md:hover:text-emerald-600 md:p-0 md:dark:hover:bg-transparent" onClick={descarga} >
                CV
               </button>
             </li>
