@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  #fn {
+    margin-top: 20px;
+    
+    
+  }
+}
+
+@media (max-width: 940px) {
+  #me {
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin: 0 auto;
+    margin-top: 80px;
+    
+  }
+}
+
+@media (max-width: 940px) {
+  #yo {
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  #fn {
+    margin-top: 20px;
+    
+  }
+}
+
+@media (max-width: 768px) {
+  #texto1 {
+    font-size: 24px ;
+    line-height: 32px ;
+  }
+}
+
+@media (max-width: 768px) {
+  #texto2 {
+    font-size: 19px ;
+    line-height: 25px ;
+  }
+}
+
+
+.linea{
+ position: relative;
+}
+
+.linea:before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 120%;
+  left: -15px;
+  background-color: rgb(17 24 39);
+}
+
+.linea::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 10px;
+  left: -23px;
+  background-color: rgb(17 24 39);
+}
