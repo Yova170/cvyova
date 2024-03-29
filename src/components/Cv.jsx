@@ -12,8 +12,8 @@ const Cv = () => {
                 <div class="mt-10 lg:pb-18 ml-10 mb:ml-0 mr-5 mb:ml-0">
                     <div class="linea ">
                         <div class="">
-                            <h2 class="text-2xl">2024 - Listo para formar parte de tu equipo o proyecto.</h2>
-                            <p class="text-10">Estoy encantado de porder formar parte de tu equipo o de tu proyecto, comunicate conmigo. </p>
+                            <h2 class="text-2xl"> 2024 - Techical Support - Consorcio STC </h2>
+                            <p class="text-10">Encargado de brindar soluciones tanto de hardware como de Software con tecnoligas a la vanguardia.</p>
                         </div>
                     </div>
                     
