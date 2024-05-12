@@ -57,20 +57,21 @@ function  Proyectos() {
                 </div>
 
                 <div className="flex flex-col overflow-hidden rounded-lg shadow-lg transition duration-500 hover:scale-105 md:hover:scale-110">
-                    <a href="https://github.com/Yova170/Calculator-Python" target="_blank">
-                        <img className="h-48 w-full object-cover" src="/calc.jpg" alt="Calculator Image"/>
+                    <a href="https://www.e-gsi.net/epower-cloud/" target="_blank">
+                        <img className="h-48 w-full object-cover" src="tbj.png" alt="Calculator Image"/>
                     </a>
 
                     <div className="flex flex-1 flex-col justify-between bg-white p-6">
                         <div className="flex-1">
-                        <p className="text-xl font-semibold text-gray-900">Calculadora Python</p>
-                        <p className="text-2x1  text-gray-900 mt-3">Calculadora hecha con python, un Proyecto para porbar un nuevo framework visual de Python PQT5</p>
+                        <p className="text-xl font-semibold text-gray-900">ePower</p>
+                        <p className="text-2x1  text-gray-900 mt-3">Implemtador de ePower, un software de digitalizacion y escaneo masivo de documentos.</p>
 
                         <a  className="flex">
                             
-                            <img src="python.png" alt="Java" className="mt-5 w-5 h-5"/>
-                            <a className="ml-auto mt-5 w-5 h-5" href="https://github.com/Yova170/Calculator-Python" target="_blank">
-                                <img src="github.png" alt="GitHub" />
+                            <img src="java.png" alt="Java" className="mt-5 w-5 h-5"/>
+                            <img src="sql.png" alt="sql" className="mt-5 w-5 h-5"/>
+                            <a className="ml-auto mt-5 w-5 h-5" href="https://www.e-gsi.net/epower-cloud/" target="_blank">
+                                <img src="web.png" alt="Web" />
                             </a>
                             
                         </a>
