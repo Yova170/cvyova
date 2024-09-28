@@ -79,6 +79,27 @@ function  Proyectos() {
                     </div>
                 </div>
 
+                <div className="flex flex-col overflow-hidden rounded-lg shadow-lg transition duration-500 hover:scale-105 md:hover:scale-110">
+                    <a  target="_blank">
+                        <img className="h-48 w-full object-cover" src="pr1.png" alt="Calculator Image"/>
+                    </a>
+
+                    <div className="flex flex-1 flex-col justify-between bg-white p-6">
+                        <div className="flex-1">
+                        <p className="text-xl font-semibold text-gray-900">Inventario</p>
+                        <p className="text-2x1  text-gray-900 mt-3">Desarrollo de Sistema de inventario para empresa, dicho sistema se implementa para las sucursales a nivel nacional.</p>
+
+                        <a  className="flex">
+                            
+                            <img src="php.png" alt="Java" className="mt-5 w-5 h-5"/>
+                            <img src="sql.png" alt="sql" className="mt-5 w-5 h-5"/>
+                            
+                            
+                        </a>
+                        </div>
+                    </div>
+                </div>
+
 
                 </div>
                     
